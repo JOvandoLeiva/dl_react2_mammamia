@@ -1,0 +1,85 @@
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/src/img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; 
+}
+
+.active {
+
+  color: coral;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.navBarIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.card-title {
+  text-transform: capitalize;
+}
+
+.custom-ul {
+  list-style-type: none;
+}
+
+.custom-ul li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/src/img/icono_pizza.png');
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.item-small {
+  width: 150px; 
+  height: auto;
+}
+
+
+@media (max-width: 767px) {
+  .custom-row {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .custom-col {
+    width: 50%; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-col {
+    width: 33.333%;
+  }
+}
+
+.alert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.alert.alert-success {
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  text-align: center;
+  width: 200px;
+}
+
+.img-rounded {
+  width: 40rem; 
+  border-radius: 50%; 
+}
